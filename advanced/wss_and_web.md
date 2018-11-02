@@ -93,7 +93,7 @@ mydomain.me
   SSLCipherSuite HIGH:!aNULL
   
   <Location "/ray/">
-    ProxyPass ws://127.0.0.1:10000/ray/ upgrade=WebSocket
+    ProxyPass ws://127.0.0.1:10000/ray/ upgrade=websocket
     ProxyAddHeaders Off
     ProxyPreserveHost On
     RequestHeader append X-Forwarded-For %{REMOTE_ADDR}s
